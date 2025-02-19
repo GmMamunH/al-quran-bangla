@@ -11,6 +11,8 @@ const SuraFatihaPage = () => {
         <div key={post.id}>
           <AudioPlayer post={post} />
           <h2>{post.name}</h2>
+          <h2>{post.aribic}</h2>
+
           <p>আয়াত সংখ্যা: {post.ayahs}</p>
           <p>শহর: {post.city}</p>
         </div>
