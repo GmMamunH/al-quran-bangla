@@ -1,6 +1,10 @@
 import React from "react";
+import { SuraType } from "@/lib/quran/types/suraType";
 
-const AudioPlayer = ({ post }) => {
+type AudioPlayerProps = {
+  post: SuraType;
+};
+const AudioPlayer = ({ post }: AudioPlayerProps) => {
   if (!post || !post.player) {
     return <p>অডিও ফাইল পাওয়া যায়নি।</p>;
   }
